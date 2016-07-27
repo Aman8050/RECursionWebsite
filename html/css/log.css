@@ -1,0 +1,293 @@
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela Round'), local('VarelaRound-Regular'), url(../../html/fonts/varela_round.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body
+{
+	margin:0;
+	font-family: 'Varela Round', 'Roboto', sans-serif;
+	background-color: #fff;
+}
+form
+{
+	margin-bottom:0;
+}
+a, a:hover, a:visited, a:active, a:focus
+{
+	color:inherit;
+	text-decoration:none;
+}
+a:hover
+{
+	color:#3AC162;
+}
+.row
+{
+	max-width:1030px;
+	margin:0 auto;
+}
+.form-horizontal .form-group
+{
+    margin-right: 0;
+    margin-left: 0;
+}
+.black_layer
+{
+	/*background-color:rgba(0,0,0,0.5);
+	min-height:100%;*/
+}
+.header_back
+{
+	width:100%;
+	background-color:#fff;
+	height:80px;
+	z-index:999;
+	border-bottom: 1px solid rgba(200,200,200,0.5);
+}
+.header
+{
+	width:100%;
+	font-size:20px;
+	line-height:80px;
+	display:table;
+	color: #5fcf80;
+	font-family: 'Varela Round';
+}
+.header_left
+{
+	width:50%;
+	float:left;
+	padding:0 20px;
+}
+.header_right
+{
+	width:50%;
+	float:right;
+	text-align:right;
+	padding:0 20px;
+}
+#site_name
+{
+	transition:0.5s;
+}
+#site_logo
+{
+	transition:0.5s;
+}
+#site_logo img
+{
+	height: 40px;
+	margin-top: 20px;
+}
+.body1
+{
+	display:table;
+	width:100%;
+	float:middle;
+	text-align:center;
+	color:#fff;
+	padding-bottom:70px;
+	background-color:#5fcf80;
+}
+.info_bar
+{
+	width:100%;
+	height:70px;
+	font-size:16px;
+	line-height:70px;
+}
+#info
+{
+	background-color: red;
+	cursor:pointer;
+}
+.welcome_text
+{
+	display: table;
+	width: 100%;
+	height: 120px;
+	margin-bottom:40px;
+	font-family: 'Varela Round';
+	text-align: center;
+}
+@media (min-width: 992px)
+{
+.welcome_text
+{
+	height: 352px;
+	margin-bottom:0;
+	text-align: left;
+}
+}
+.body_header
+{
+	display:table-cell;
+	vertical-align: middle;
+	margin:0;
+	padding:0 0 0 0;
+}
+.body_header h1
+{
+	font-size:40px;
+	font-weight: 600;
+	line-height:60px;
+}
+.body_header h2
+{
+	font-size:20px;
+	font-weight: 600;
+	line-height:30px;
+	letter-spacing:3px;
+}
+h1, h2
+{
+	margin:0;
+}
+.fat_header
+{
+	background-color:#637A91;
+	font-size: 24px;
+	font-weight: 900;
+	padding: 20px;
+	margin:0;
+}
+.login_box
+{
+	overflow:hidden;
+	max-width:500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#login_wrapper
+{
+	position:relative;
+	height:352px;
+	margin:0;
+	padding:0;
+	left:0px;
+	transition: left 0.5s;
+}
+#student_login, #admin_login
+{
+	border-radius:5px;
+	overflow: hidden;
+	float:left;
+}
+li
+{
+	list-style:none;
+}
+.login_form
+{
+	background-color:#fff;
+	padding:30px;
+}
+.form-control
+{
+	height:44px;
+	font-size: 16px;
+	line-height:42px;
+	background-color:#e8ebed;
+	border: 2px solid #e8ebed;
+	box-shadow:none;
+}
+.form-control:focus
+{
+	border:2px solid #ccc;
+	box-shadow:none;
+	background-color:#fff;
+}
+.btn, .btn:visited, .btn:active, .btn:focus
+{
+	color:#fff;
+	width:120px;
+	background-color: #5fcf80;
+	padding:10px 0;
+	margin: 10px;
+	border-radius:5px;
+	font-size:20px;
+	line-height:28px;
+	font-weight:100;
+	cursor:pointer;
+	border:0;
+	box-shadow:none;
+	transition:0.4s;
+}
+.btn:hover
+{
+	background-color:#3AC162;
+	color:#fff;
+}
+.signinas
+{
+	color:#5fcf80;
+}
+.signinas a
+{
+	cursor:pointer;
+}
+#student_status, #admin_status
+{
+	color:#5fcf80;
+	height: 20px;
+}
+.body2
+{
+	background-color:#fff;
+	padding: 70px 0 30px 0;
+}/*#67BCDB;*/
+.body2 h2
+{
+	text-align:center;
+	font-size: 24px;
+	font-weight:600;
+	margin-bottom:30px;
+}
+.feature
+{
+	padding-top:50px;
+	padding-bottom:50px;
+	height:372px;
+}
+.feature_image
+{
+	width:160px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.feature_image img
+{
+	width: 160px;
+}
+.feature_text
+{
+	max-width: 350px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+.feature_head
+{
+	font-size: 16px;
+	line-height:40px;
+	font-weight:600;
+}
+.feature_desc
+{
+	font-size: 16px;
+	line-height:24px;
+}
+footer
+{
+	background-color:#637A91;
+}
+.footer
+{
+	color:#fff;
+	text-align:center;
+	font-size:16px;
+	line-height:50px;
+}

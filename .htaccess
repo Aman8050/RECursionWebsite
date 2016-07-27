@@ -1,0 +1,21 @@
+RewriteEngine on
+RewriteBase /
+#RewriteCond %{REQUEST_URI} ^/(?:index\.php)\?problem=([^\s&]+)&handle=([^\s&]+)\s [NC]
+#RewriteRule ^ viewsolution/%2/%1? [R=302,L,NE]
+RewriteRule ^student/([A-Za-z0-9_-]+)/?$    ?page=student&handle=$1    [NC,L]    # Admin-> view student
+RewriteRule ^user/([A-Za-z0-9_-]+)/?$    ?page=user&handle=$1    [NC,L]    # Student -> view student
+RewriteRule ^submit/([A-Za-z0-9_-]+)/?$    ?page=submit&problem=$1    [NC,L]    # Student -> submit soln
+RewriteRule ^viewsolution/([A-Za-z0-9_-]+)/?$    ?page=viewsolution&problem=$1    [NC,L]    # Student-> view soln by self to problem
+RewriteRule ^viewsolution/([A-Za-z0-9_-]+)/([A-Za-z0-9_-]+)/?$    ?page=viewsolutionadmin&user=$1&problem=$2    [NC,L]    # Admin-> view soln by student to problem
+RewriteRule ^login/?$    ?page=login    [NC,QSA,L]    # Login page
+RewriteRule ^logout/?$    ?page=logout   [NC,L]    # Login page
+RewriteRule ^changepassword/?$    ?page=changepassword   [NC,L]    # change password
+RewriteRule ^settings/?$    ?page=settings   [NC,L]    # change password
+RewriteRule ^change/?$    ?page=change   [NC,L]    # change for admins
+RewriteRule ^codechef/?$    ?page=codechef   [NC,QSA,L]    # Spoj page
+RewriteRule ^cc/?$    ?page=cc   [NC,QSA,L]    # Codechef page
+RewriteRule ^([a-z0-9_-]+)\.html$ index.php/page/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|asset|robots\.txt)
+RewriteRule ^(.*)$ index.php?/$1 [L]

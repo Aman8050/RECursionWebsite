@@ -1,0 +1,91 @@
+.row
+{
+	max-width:1030px;
+	margin:0 auto;
+}
+.header_back
+{
+	position:relative;
+	width:100%;
+	background-color:#fff;
+	height:80px;
+	z-index:999;
+	border-bottom: 1px solid rgba(200,200,200,0.5);
+}
+.header
+{
+	width:100%;
+	font-size:20px;
+	line-height:80px;
+	display:table;
+	color: #FF8A65;
+	font-family: 'Varela Round';
+}
+.header_left
+{
+	width:50%;
+	float:left;
+	padding:0 20px;
+}
+.header_right
+{
+	width:50%;
+	float:right;
+	text-align:right;
+	padding:0 20px;
+}
+.caret
+{
+	position:relative;
+	right:5px;
+}
+#header_dropdown
+{
+	padding:26px 5px;
+	cursor:pointer;
+}
+#header_menu
+{
+	float:right;
+	right:0;
+	left:auto;
+	top: 49px;
+}
+#header_menu li
+{
+	line-height:26px;
+	font-size:16px;
+}
+#header_menu li a
+{
+	color: #ff8a65;
+}
+#header_menu li a:hover
+{
+	color: #ff5722;
+}
+.dropdown-menu .divider {
+    margin: 4px 0;
+}
+.ddpointer
+{
+	position:absolute;
+	top:-5px;
+	right:20px;
+	width: 0;
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+}
+.ddpointerb
+{
+	position:absolute;
+	top:-6px;
+	right:19px;
+	width: 0;
+	height: 0; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #c1c1c1;
+}

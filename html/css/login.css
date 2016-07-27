@@ -1,0 +1,149 @@
+body
+{
+	margin:0;
+	font-family: 'Roboto', sans-serif;
+	background-color:#333;
+	background-image:url("../images/laptop_full.png");
+	background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+form
+{
+	margin-bottom:0;
+}
+.form-horizontal .form-group
+{
+    margin-right: 0;
+    margin-left: 0;
+}
+.black_layer
+{
+	background-color:rgba(0,0,0,0.5);
+	min-height:100%;
+}
+.row
+{
+	margin:0;
+}
+.header_back
+{
+	width:100%;
+	background-color:#fff;
+	height:50px;
+}
+.header
+{
+	width:100%;
+	padding:0 20px;
+	font-size:30px;
+	line-height:50px;
+	display:table;
+}
+.header_left
+{
+	float:left;
+}
+.header_right
+{
+	float:right;
+}
+.body1
+{
+	float:middle;
+	text-align:center;
+	color:#fff;
+}
+.info_bar
+{
+	width:100%;
+	height:20px;
+	font-size:16px;
+	line-height:20px;
+}
+#info
+{
+	background-color: red;
+	cursor:pointer;
+}
+.body_header
+{
+	font-size:50px;
+	font-weight: 600;
+	line-height:80px;
+	margin:0;
+	padding:0 0 0 0;
+}
+.body_subheader
+{
+	font-size:20px;
+	font-weight:100;
+	margin:20px;
+	margin-bottom:50px;
+	letter-spacing:3px;
+}
+.fat_header
+{
+	position:relative;
+	font-size: 24px;
+	font-weight: 900;
+}
+.signin_as
+{
+	display:table;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0;
+}
+.btn-left
+{
+	float:left;
+}
+.btn-right
+{
+	float:right;
+}
+.btn
+{
+	color:#fff;
+	width:120px;
+	background-color: #1e8cbe;
+	padding:10px 0;
+	margin: 10px;
+	border-radius:24px;
+	font-size:20px;
+	line-height:28px;
+	font-weight:100;
+	cursor:pointer;
+}
+.btn:hover
+{
+	color:#1e8cbe;
+	background-color:#fff;
+}
+.boxes
+{
+	margin-top:20px;
+}
+.featurebox
+{
+	padding: 20px;
+}
+#login_panel, #student_login, #admin_login
+{
+	min-height: 240px;
+}
+#student_login, #admin_login
+{
+	width: 300px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.back_img
+{
+	cursor:pointer;
+	position:absolute;
+	top:-3px;
+	left:0;
+}

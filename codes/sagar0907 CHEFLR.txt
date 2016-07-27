@@ -1,0 +1,98 @@
+//this is a comment
+//<>this is also a comment
+#include<bits/stdc++.h>
+#define lli long long int
+#define pf printf
+#define sf scanf
+#define nl printf("\n")
+#define pfx printf("x\n")
+using namespace std;
+
+class graph
+{
+private:
+    list<int> *adj;
+    int V;
+public:
+    graph(int v)
+    {
+        V = v;
+        adj = new list<int>[V];
+    }
+    void addEdge(int v, int w)
+    {
+        adj[v].push_back(w);
+        adj[w].push_back(v);
+    }
+    list<int> con(int v)
+    {
+        return adj[v];
+    }
+    int v()
+    {
+        return V;
+    }
+};
+
+
+class DFS
+{
+private:
+    bool *marked;
+    int *edgeTo;
+    int s;
+    void dfs(graph G, int v)
+    {
+        marked[v]=true;
+        for(int& w : G.con(v))
+        {
+            if(!marked[w])
+            {
+                dfs(G,w);
+                edgeTo[w]=v;
+            }
+        }
+    }
+public:
+    DFS(graph G, int source)
+    {
+        s=source;
+        marked = new bool[G.v()];
+        edgeTo = new int[G.v()];
+        for(int i=0;i<G.v();i++)
+        {
+            marked[i]=false;
+        }
+        dfs(G,s);
+    }
+    bool hasPathTo(int v)
+    {
+        return marked[v];
+    }
+    list<int> pathTo(int v)
+    {
+        list<int> path;
+        if(!hasPathTo(v)) return path;
+        for(int x=v;x!=s;x=edgeTo[x])
+            path.push_back(x);
+        path.push_back(s);
+        return path;
+    }
+};
+int main()
+{
+    graph G(6);
+    G.addEdge(1,2);
+    G.addEdge(1,3);
+    G.addEdge(3,4);
+    DFS dfs(G,2);
+    bool z=dfs.hasPathTo(5);
+    pf(z ? "true\n" : "false\n");
+    z=dfs.hasPathTo(4);
+    pf(z ? "true\n" : "false\n");
+    list<int> path=dfs.pathTo(4);
+    for(int &w: path)
+        pf("%d ",w);
+    nl;
+    return 0;
+}

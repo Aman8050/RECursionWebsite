@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela Round'), local('VarelaRound-Regular'), url(../../html/fonts/varela_round.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body
+{
+	margin:0;
+	font-family: 'Roboto', sans-serif;
+	background-color: #F3E5F5;
+}
+.header
+{
+	background-color: #9C27B0;
+	padding:20px;
+	text-align:center;
+	font-weight:bold;
+	color:#fff;
+}
+.page_details
+{
+	padding:8px 30px;
+	font-size:16px;
+	background-color:#7B1FA2;
+	color:#fff;
+}
+table
+{
+	border-collapse: collapse;
+	margin-bottom:10px;
+}
+td
+{
+	padding:10px;
+}
+tr > td
+{
+	border-width: 1px;
+	border-style:solid;
+	border-color:rgba(243,229,245,0.8);
+}
+td img
+{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+.prob_list
+{
+	padding:20px;
+}
+.heading
+{
+	font-weight:600;
+	color: #4A148C;
+	padding: 10px;
+}
+.section
+{
+	background-color: #fff;
+	padding:10px;
+}
+button
+{
+	background-color: #FF5722;
+	color:#fff;
+	font-weight:600;
+	line-height:20px;
+	border:0;
+	padding:5px 20px;
+	margin: 0 15px;
+	border-radius:2px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+button:hover
+{
+	background-color:#F4511E;
+}
+.button
+{
+	width:20px;
+	background-color: #FF5722;
+	color:#fff;
+	font-weight:600;
+	line-height:20px;
+	border:0;
+	padding:5px 20px;
+	margin: 0 15px;
+	border-radius:2px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+.button:hover
+{
+	background-color:#F4511E;
+}
+.user_prob_form
+{
+	background-color:#fff;
+	padding:10px;
+	display:table;
+}
+.user_sub_det
+{
+	padding:20px;
+}
+.form-group
+{
+	float:left;
+	padding-right:20px;
+}
+.form-group > label
+{
+	float:left;
+	padding-right:10px; 
+	line-height:40px;
+	vertical-align:middle;
+}
+.form-group div
+{
+	float:right;
+}
+.form-control
+{
+	padding:10px;
+}
+.user_prob_form button
+{
+	float:left;
+}
+.students
+{
+	padding:20px;
+}
+.student_list
+{
+	background-color:#fff;
+	padding:10px;
+}
+table
+{
+	min-width:60%;
+}
+thead
+{
+	color: #fff;
+	background-color:#BA68C8;
+}
+a
+{
+	text-decoration:none;
+	color: #EC407A;
+}
+a:hover
+{
+	color: #D81B60;
+}
+.red_text, .red_text a
+{
+	color: #EC407A;
+}
+.red_text:hover, .red_text a:hover
+{
+	color: #D81B60;
+}
+.green_text, .green_text a
+{
+	color: #009688;
+}
+.green_text:hover, .green_text a:hover
+{
+	color: #00796B;
+}
+.orange_text, .orange_text a
+{
+	color: #FF9800;
+}
+.orange_text:hover, .orange_text a:hover
+{
+	color: #F57C00;
+}
+.text-center
+{
+	text-align:center;
+}
